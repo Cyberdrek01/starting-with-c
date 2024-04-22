@@ -6,3 +6,4 @@ int main(){
     printf("%d \n",a);
     return 0;
 }
+// implicit and explicit  conversion of data types in C
