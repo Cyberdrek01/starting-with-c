@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 int main(){
-    int isMonday=1;
-    int isRaining=1;
-    printf("%d\n", isMonday || isRaining);
+    int x;
+    printf("enter number: ");
+    scanf("%d", &x);
+    printf("%d \n" ,x>9 && x<100);
     return 0;
 }
