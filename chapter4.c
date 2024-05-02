@@ -23,15 +23,27 @@
 //     return 0;
 // }
 
-// break statement
+// // break statement
+// #include <stdio.h>
+// int main(){
+//     for(int i=1; i<=5; i++){
+//         if(i==3){
+//             break;
+//         }
+//         printf("%d \n", i);
+//     }
+//     printf("end");
+//     return 0;
+// }
+
+// continue statement: skipping
 #include <stdio.h>
 int main(){
-    for(int i=1; i<=5; i++){
-        if(i==3){
-            break;
-        }
-        printf("%d \n", i);
+    for(int i = 1 ; i <= 5 ; i++ ){
+        if (i == 3)
+            continue;
+        printf("%d\n",i);
     }
-    printf("end");
+    printf("End!");
     return 0;
 }
