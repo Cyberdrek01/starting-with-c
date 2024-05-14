@@ -44,3 +44,20 @@
 // values that r passed in function call || values in the function declaration and definition
 // used to send value || used to receive value
 // actual parameter || formal parameter
+
+
+#include <stdio.h>
+void calculatePrice(float value);
+
+int main(){
+    float value;
+    printf("Enter the price : ");
+    scanf("%f",&value);
+    calculatePrice(value);
+    return 0;
+}
+
+void calculatePrice(float value){
+    value=value+(0.18*value);
+    printf("final price is : %f",value);
+}
