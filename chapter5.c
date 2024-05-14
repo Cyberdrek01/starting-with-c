@@ -22,19 +22,25 @@
 
 // Types of function : library function & user defined function
 
-#include<stdio.h>
-int sum(int a, int b);
-int main (){
-    int a, b;
-    printf("Enter the first number: ");
-    scanf("%d",&a);
-    printf("Enter the second number: ");
-    scanf("%d",&b);
+// #include<stdio.h>
+// int sum(int a, int b);
+// int main (){
+//     int a, b;
+//     printf("Enter the first number: ");
+//     scanf("%d",&a);
+//     printf("Enter the second number: ");
+//     scanf("%d",&b);
 
-    int s= sum(a,b);
-    printf("The sum is %d \n",s);
-    return 0;
-}
-int sum (int a, int b){
-    return a + b;
-}
+//     int s= sum(a,b);
+//     printf("The sum is %d \n",s);
+//     return 0;
+// }
+// int sum (int a, int b){
+//     return a + b;
+// }
+
+// argument vs parameter
+
+// values that r passed in function call || values in the function declaration and definition
+// used to send value || used to receive value
+// actual parameter || formal parameter
