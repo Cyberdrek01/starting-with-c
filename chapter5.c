@@ -54,10 +54,11 @@ int main(){
     printf("Enter the price : ");
     scanf("%f",&value);
     calculatePrice(value);
+    printf("the value is:%f \n",value);
     return 0;
 }
 
 void calculatePrice(float value){
     value=value+(0.18*value);
-    printf("final price is : %f",value);
+    printf("final price is : %f \n",value);
 }
