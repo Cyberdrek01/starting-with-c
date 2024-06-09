@@ -1,23 +1,25 @@
 #include<stdio.h>
 int main(){
-    int h=50,c=0.7,ts=5600;
-    float hs,cc,tens;
-    printf("Enter the hardness,carbon content and tensile strength of steel: ");
-    scanf("%f %f %f ",&hs,&cc,&tens);
-    if(h==hs && c==cc && ts==tens){
-        printf("Grade 10");
+    float h,c,ts;
+    printf("Enter the hardness , carbon content and tensile strength of the steel: ");
+    scanf("%f %f %f",&h,&c,&ts);
+    if(h>50 && c<0.7 && ts>5600){
+        printf("Grade 10 ");
     }
-    else if(h<hs&&c>cc && ts>tens){
-        printf("Grade 8");
+    else if(h>50 && c<0.7 && ts<5600){
+        printf("grade 9");
     }
-    else if(h<hs&&c<cc && ts<tens){
-        printf("Grade 7");
+    else if(h>50 && c>0.7 && ts>5600){
+        printf("grade 8");
     }
-    else if(h<hs||c>cc || ts<tens){
-        printf("Grade 6");
+    else if(h<50 && c<0.7 && ts>5600){
+        printf("grade 7");
     }
-    else if(h>hs&&c<cc && ts>tens){
-        printf("Grade 5");
+    else if(h>50 || c<0.7 || ts>5600){
+        printf("grade 6");
+    }
+    else if(h<50 && c>0.7 && ts<5600){
+        printf("grade 6");
     }
     return 0;
 }
