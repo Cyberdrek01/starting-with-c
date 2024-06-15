@@ -2,25 +2,22 @@
 #include<stdlib.h>
 int main(){
     char ch;
-    int a,b;
     while(1){
-        printf("Enter f for factorial, p for prime number, o for odd/even \n to exit press x: ");
+        printf("\nEnter f for factorial, p for prime number, o for odd/even \n To exit press x: ");
         scanf("%c",&ch);
         if(ch=='x'){
             exit(0);
         }
-        int i=1,n,fact=1,prime=0;
+        int i,n,fact=1,prime=0;
         printf("Enter your number: ");
         scanf("%d",&n);
         switch (ch)
         {
         case 'f':
-            fact=n;
-            while(n!=0){
-                i=i*n;
-                n=n-1;
-            }            
-            printf("Factorial of %d= %d",fact,n);
+            for(i=1;i<=n;i++){
+                fact=fact*i;
+            }
+            printf("Factorial of %d is: %d",n,fact);
             break;
         case 'p':
             for(i=2;i<=n/2;i++){
@@ -38,9 +35,11 @@ int main(){
             break;
         case 'o':
             if(n%2==0){
-                printf("it is a even number");
+                printf("It is a even number");
             }
-            else("It is odd number");
+            else{
+                printf("It is odd number");
+            }
             break;
         default:
             printf("ERROR! please enter a valid input.");
