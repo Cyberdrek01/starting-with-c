@@ -26,7 +26,7 @@ int main(){
                     break;
                 }
             }
-            if(prime==0&&n!=1){
+            if(prime==0&&n!=1){bis
                 printf("%d is a prime number",n);
             }
             else{
