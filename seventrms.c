@@ -21,7 +21,7 @@ int main() {
     }
 
     // Print the sum of the series
-    printf("The sum of the first seven terms of the series is: %.5lf\n", sum);
+    printf("The sum of the first seven terms of the series is: %f\n", sum);
 
     return 0;
 }
